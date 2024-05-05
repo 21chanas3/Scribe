@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "scribe"
+version = "0.1.0"
+description = ""
+authors = ["Aden Chan <40689649+21chanas3@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pysimplegui = "^5.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
