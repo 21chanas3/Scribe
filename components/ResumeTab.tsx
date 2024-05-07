@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 const ResumeTab = () => {
-    const [cardList, setCardList] = useState([{ title: "", start_date: "", end_date: "", company: "", "description": "" }])
+    const [cardList, setCardList] = useState([{ title: "", start_date: "", end_date: "", name: "", description: "" }])
 
     const handleCardAdd = () => {
-        setCardList([...cardList, { title: "", start_date: "", end_date: "", company: "", "description": "" }])
+        setCardList([...cardList, { title: "", start_date: "", end_date: "", name: "", description: "" }])
     }
 
     const handleCardRemove = (index: number) => {
@@ -85,9 +85,9 @@ const ResumeTab = () => {
                         <div className="flex">
                             <label className="form-control w-full basis-1/2">
                                 <div className="label">
-                                    <span className="label-text">Company</span>
+                                    <span className="label-text">Company/Project</span>
                                 </div>
-                                <input type="text" name="company" value={singleCard.company} placeholder="Type here" className="input input-bordered w-full" onChange={(e) => handleCardChange(e, index)}/>
+                                <input type="text" name="company" value={singleCard.name} placeholder="Type here" className="input input-bordered w-full" onChange={(e) => handleCardChange(e, index)}/>
                             </label>
                             <label className="form-control w-full px-2 basis-1/4">
                                 <div className="label">
