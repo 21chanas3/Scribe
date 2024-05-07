@@ -24,7 +24,8 @@ const ResumeTab = () => {
 
     return (
         <div>
-            <div className="card bg-base-100 shadow-xl mt-5">
+            <button className="btn btn-primary w-full mt-2">Upload Resume</button>
+            <div className="card bg-base-100 shadow-xl mt-2">
                 <div className="card-body">
                     <div className="flex">
                         <label className="form-control w-full">
@@ -76,11 +77,9 @@ const ResumeTab = () => {
                     </div>
                 </div>
             </div>
-            <div className="pt-2">
-                <button className="btn btn-primary w-full" onClick={handleCardAdd}>+ Add Experience</button>
-            </div>
+            <button className="btn btn-primary w-full mt-5" onClick={handleCardAdd}>+ Add Experience</button>
             {cardList.map((singleCard, index) => (
-                <div className="card bg-base-100 shadow-xl mt-5" key={index}>
+                <div className="card bg-base-100 shadow-xl mt-2" key={index}>
                     <div className="card-body">
                         <div className="flex">
                             <label className="form-control w-full basis-1/2">
